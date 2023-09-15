@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Hanken+Grotesk:wght@800&family=Inter&family=Karla:wght@700&family=Lexend+Deca&family=Open+Sans:wght@400;700&family=Outfit:wght@300;400;600;700&family=Palanquin:wght@300;400&family=Poppins:wght@400;600&family=Red+Hat+Display:wght@500;900&family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+}
+
+.card{
+    background: linear-gradient(to right, #f5b506, #e73333);
+    width: 30%;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 2px 4px 8px #7a7a7a;
+    margin-top: 100px;
+}
+
+.card h1{
+    color: #fff;
+    font-size: 40px;
+}
+
+.card input{
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: 2px solid #5a5a5a;
+}
+
+.card button{
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 45%;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+.card button:hover{
+    background-color: #8f6666;
+}
+
+.card button:focus{
+    outline: 4px solid #1d42e798;
+    transition: 0.4s;
+}
+
+.card .button1:focus{
+    background-color: #42ee20;
+}
+
+.card .button2:focus{
+    background-color: #e73333;
+}
+
+.card .button3:focus{
+    background-color: #0c1ec4;
+}
+
+.card .button4:focus{
+    background-color: #616666;
+}
+
+@media screen and (max-width: 1240px){
+    .card{
+        width: 60%;
+        height: 500px;
+        padding: 10px;
+    }
+
+    .card button{
+        width: 60%;
+    }
+
+    .bouttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .card{
+        width: 90%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card button{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .card{
+        width: 95%;
+        height: 450px;
+        margin-top: 150px;
+    }
+
+    .card input{
+        width: 100%;
+    }
+
+    .card button{
+        width: 100%;
+    }
+}
